@@ -1,3 +1,2 @@
 # Ola Mundo
- ## Repositório teste
- Meu primeiro repositório :)
+ Aplicação web simples, minha primeira versionada. Feita para testes.
