@@ -1,14 +1,14 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
 body {
-    background-color: rgb(176, 144, 206);
+    background-color: rgb(46, 181, 199);
 }
 
 main {
-    background-color: white;
+    background-color: rgba(1, 252, 177, 0.349);
     width: 500px;
     margin: auto;
     box-shadow: 3px, 3px, 5px, black;
