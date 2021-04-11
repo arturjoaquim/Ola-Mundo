@@ -1,0 +1,17 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(176, 144, 206);
+}
+
+main {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px, 3px, 5px, black;
+    padding: 10px;
+}
+
