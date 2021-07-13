@@ -4,34 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro site em repositório</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: aquamarine;
-        }
-
-        main {
-            background-color: white;
-            width: 300px;
-            margin: auto;
-            box-shadow: 2px 2px 10px rgb(56, 114, 95);
-            padding: 10px;
-        }
-
-        h1#titulo {
-            text-align: center;
-        }
-
-    </style>
+    <link rel="stylesheet" href="static/style.css">
+    <title>Artur Joaquim - Desenvolvedor</title>
 </head>
 <body>
+    <!--HEADER-->
+    <header>
+        <h1>Artur Joaquim</h1>
+        <!--MENU-HAMBURGUER-->
+        <input type="checkbox" name="bt-menu" id="bt-menu">
+        <label for="bt-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <!--NAV-BAR-->
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="#sobre-mim">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--MAIN-->
     <main>
-        <h1 id="titulo">Artur Joaquim</h1>
-        <article>
-            <p>Aspirante a desenvolvimento web e todos os dias aprendendo algo novo &#x1F680;</p>
-            <p>Web site ainda em desenvolvimento!</p>
-        </article>
+        <!--SOBRE-->
+        <section id="sobre-mim">
+            <article>
+                <img src="static/imagens/minha-foto.jpg" alt="Minha foto">
+                <div>
+                    <h2 class="title-section">Quem sou eu?</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident omnis aliquid cupiditate odio iusto quia, cumque quos itaque delectus assumenda quibusdam, nihil molestiae perspiciatis exercitationem eligendi quaerat fugiat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore iusto qui expedita corrupti repudiandae, inventore id iste quas quis repellat ipsam commodi deleniti molestiae labore maxime accusantium, culpa, aperiam mollitia.</p>
+                </div>
+            </article>
+        </section>
+        <!--PROJETOS-->
+        <section id="projetos">
+            <h2 class="title-section">Projetos</h2>
+            <div id="grid-projetos">
+                <article class="projeto">
+                    <h3>Comunidade Techs</h3>
+                    <img src="static/imagens/comunidade-p.png" alt="Print da comunidade">
+                    <p>Comunidade Techs é uma web comunidade com usuários, posts e muito mais. Desenvolvido com Flask (python) e Bootstrap, Comunidade Techs é apenas um site para portfolio pessoal. Você pode acessar seu <a href="#">código fonte</a> e também <a href="#">visitá-lo</a>.</p>
+                </article>
+                <article class="projeto">
+                    <h3>Chat-bot</h3>
+                    <img src="static/imagens/comunidade-p.png" alt="Robô Figurativo">
+                    <p>Chat-bot é uma IA treinada para responder mensagens e simular uma conversa natural entre duas pessoas. É desenvolvido com python e spacy (biblioteca de linguagem neural). Você pode acessar seu <a href="#">código fonte</a> por aqui.</p>
+                </article>
+            </div>
+        </section>
+        <!--CONTATOS-->
+        <section id="contatos">
+            <h2 class="title-section">Onde estou?</h2>
+            <ul>
+                <li>
+                    <a href="#"><img src="static/imagens/icone-github.png" alt="ícone github">/arturjoaquim</a> - Acesse meu perfil no GitHub
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/arturjoaquim_/"><img src="static/imagens/icone-instagram.png" alt="ícone instagram">/arturjoaquim_</a> - Me segue lá no Instagram
+                </li>
+                <li>
+                    <a href="#"><img src="static/imagens/icone-linkedin.png" alt="ícone linkedin">/artur-joaquim-rodrigues</a> - Me adiciona lá no LinkedIn
+                </li>
+                <li>
+                    <a href="#"><img src="static/imagens/icone-twitter.png" alt="ícone twitter">/ajobr2011</a> - Me segue lá no Twitter
+                </li>
+            </ul>
+        </section>
     </main>
+    <!--FOOTER-->
+    <footer>
+        <p>Site feito por <a href="#">Artur Joaquim</a>.</p>
+        <p>Imagem de <a href="https://pixabay.com/pt/users/felixmh-3374205/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5675055">Felix Mendoza</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5675055">Pixabay</a></p>
+        <p>Imagem de <a href="https://pixabay.com/pt/users/mcmurryjulie-2375405/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2883144">mcmurryjulie</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2883144">Pixabay</a></p>
+    </footer>
 </body>
 </html>
