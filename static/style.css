@@ -1,16 +1,17 @@
 @charset "UTF8";
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,700&display=swap');
 
 /*------GERAL------*/
 
 :root {
     --cor1: #2A8C66;
     --cor2: #36D99A;
-    --cor3: #D9622B;
     --cor4: #2B7C8C;
     --cor5: #45C0D9;
-    --fonte1: 'Open Sans', sans-serif;
+    --cor-destaque: #D9622B;
+    --fonte-destaque: 'Montserrat', sans-serif;
+    --fonte-default: 'DM Sans', sans-serif;
 }
 
 * {
@@ -24,14 +25,11 @@ html {
 }
 
 body {
-    font-family: var(--fonte1);
+    font-family: var(--fonte-default);
 }
 
-.title-section {
-    font-size: 3.2rem;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
-    color: var(--cor3);
-    text-align: center;
+.title {
+    font-family: var(--fonte-destaque);
 }
 
 /*------HEADER------*/
@@ -50,6 +48,7 @@ header > h1 {
     font-size: 2.4rem;
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+    padding: 0.3rem 0 0 0;
 }
 
 /*MENU-HAMBÚRGUER*/
@@ -144,10 +143,25 @@ label[for=bt-menu] span:nth-child(3){
 
 .menu-bar a:hover {
     background-color: rgba(255, 255, 255, 0.63);
-    color: var(--cor4);
+    color: var(--cor1);
 }
 
 /*------MAIN------*/
+
+/*GERAIS*/
+
+.title-section {
+    font-size: 3.2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+    color: var(--cor1);
+    text-align: center;
+}
+
+main a  {
+             
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+}
 
 /*SOBRE*/
 
@@ -166,11 +180,6 @@ label[for=bt-menu] span:nth-child(3){
     margin: 1rem 0;
 }
 
-#sobre-mim h2 {
-    text-align: center;
-    color: var(--cor3);
-}
-
 #sobre-mim p {
     text-align: center;
     color: black;
@@ -182,12 +191,12 @@ label[for=bt-menu] span:nth-child(3){
 
 #projetos {
     padding: 1rem 0 3rem 0;
-    background-color: var(--cor4);
+    background-color: var(--cor1);
 }
 
 #projetos > h2 {
-    text-align: center;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 2.5rem 0;
+    color: white;
 }
 
 #grid-projetos {
@@ -199,9 +208,9 @@ label[for=bt-menu] span:nth-child(3){
 }
 
 .projeto {
-    background-color: var(--cor2);
+    background-color: var(--cor5);
     flex: 1 1 30rem;
-    max-width: 40rem;
+    max-width: 30rem;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.411);
@@ -212,7 +221,7 @@ label[for=bt-menu] span:nth-child(3){
 }
 
 .projeto > h3 {
-    background-color: var(--cor1);
+    background-color: var(--cor4);
     display: block;
     color: white;
     border-radius: 1rem 1rem 0 0;
@@ -231,7 +240,7 @@ label[for=bt-menu] span:nth-child(3){
 .projeto p {
     margin: 1rem;
     font-size: 1.4rem;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.226);
+    
 }
 
 /*------CONTATOS------*/
@@ -239,15 +248,36 @@ label[for=bt-menu] span:nth-child(3){
 #contatos {
     padding: 1rem;
     margin: 0 0 1rem 0;
+    
 }
 
 #contatos > h2 {
     margin-bottom: 1rem;
 }
 
+#contatos ul {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    list-style: none;
+}
+
 #contatos li {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     font-size: 1.6rem;
+}
+
+#contatos a {
+    text-decoration: none;
+    color: var(--cor4);
+    display: block;
+}
+
+#contatos a::after {
+    content: " \01F517";
+    color: black;
 }
 
 /*------FOOTER------*/
@@ -257,4 +287,16 @@ footer {
     font-size: 1.2rem;
     text-align: center;
     padding: 1rem;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
