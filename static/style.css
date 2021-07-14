@@ -143,7 +143,8 @@ label[for=bt-menu] span:nth-child(3){
 
 .menu-bar a:hover {
     background-color: rgba(255, 255, 255, 0.63);
-    color: var(--cor1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.211);
+    color: var(--cor4);
 }
 
 /*------MAIN------*/
@@ -158,9 +159,7 @@ label[for=bt-menu] span:nth-child(3){
 }
 
 main a  {
-             
     font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
 }
 
 /*SOBRE*/
@@ -243,6 +242,11 @@ main a  {
     
 }
 
+.projeto a {
+    color: var(--cor-destaque);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.211);
+}
+
 /*------CONTATOS------*/
 
 #contatos {
@@ -273,6 +277,7 @@ main a  {
     text-decoration: none;
     color: var(--cor4);
     display: block;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
 }
 
 #contatos a::after {
