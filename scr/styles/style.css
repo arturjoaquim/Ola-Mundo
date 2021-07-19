@@ -55,7 +55,7 @@ header > h1 {
 
 .menu-bar {
     margin-top: -100%;
-    transition: all .5s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 #bt-menu {
@@ -278,6 +278,10 @@ main a  {
     color: var(--cor4);
     display: block;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+}
+
+#contatos a:hover {
+    text-decoration: underline;
 }
 
 #contatos a::after {
