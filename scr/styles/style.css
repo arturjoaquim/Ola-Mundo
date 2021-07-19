@@ -154,7 +154,7 @@ label[for=bt-menu] span:nth-child(3){
 .title-section {
     font-size: 3.2rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
-    color: var(--cor1);
+    color: var(--cor-destaque);
     text-align: center;
 }
 
@@ -190,7 +190,7 @@ main a  {
 
 #projetos {
     padding: 1rem 0 3rem 0;
-    background-color: var(--cor1);
+    background-color: var(--cor4);
 }
 
 #projetos > h2 {
@@ -207,20 +207,22 @@ main a  {
 }
 
 .projeto {
-    background-color: var(--cor5);
+    background-color: var(--cor2);
     flex: 1 1 30rem;
     max-width: 30rem;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.411);
+    transition: all .4s ease;
 }
 
 .projeto:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+    cursor: pointer;
 }
 
 .projeto > h3 {
-    background-color: var(--cor4);
+    background-color: var(--cor1);
     display: block;
     color: white;
     border-radius: 1rem 1rem 0 0;
@@ -228,22 +230,13 @@ main a  {
     font-size: 2.2rem;
 }
 
-.projeto > img {
-    border-radius: 0.5rem;
-    max-width: 90%;
-    max-height: 20rem;
-    margin: 1rem 0 0 0;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
-}
-
 .projeto p {
     margin: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     
 }
 
 .projeto a {
-    color: var(--cor-destaque);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.211);
 }
 
@@ -260,8 +253,6 @@ main a  {
 }
 
 #contatos ul {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
     display: flex;
     align-items: flex-start;
     flex-flow: column nowrap;
