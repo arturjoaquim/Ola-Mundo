@@ -1,5 +1,5 @@
-# 🌐 Ola Mundo 
-É uma simples página estática com HTML5 e CSS3, porém é a minha primeira aplicação versionada e o meu primeiro repositório no GitHub e por isso ela está aqui. Criei ela fazendo o curso de *Git e GitHub* do querido professor [gustavoguanabara](https://github.com/gustavoguanabara), para praticar git e realizar testes, mas hoje uso esse projeto com outros fins, são eles:
+# 🌐 Ola Mundo
+Este é o meu primeiro repositório e também é meu portfólio com meus projetos e um pouco sobre mim, em uma simples página com HTML e CSS. Os fins desse repositório são:
 
 * Falar um pouco mais sobre mim e sobre minha trajetória como desenvolvedor, você pode ver isso no conteúdo desta aplicação [clicando aqui](https://arturjoaquim.github.io/Ola-Mundo/).
 
