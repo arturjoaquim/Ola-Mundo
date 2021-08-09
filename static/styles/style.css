@@ -111,7 +111,7 @@ label[for=bt-menu] span:nth-child(3){
 
 #bt-menu:checked + label[for=bt-menu] + .menu-bar {
     margin-top: 0;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
 }
 
 /*NAV BAR*/
@@ -127,23 +127,18 @@ label[for=bt-menu] span:nth-child(3){
 .menu-bar a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: lightgray;
     font-weight: bold;
-    font-size: 2rem;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411); */
     padding: 0.5rem 0;
+    font-size: 1.8rem;
     border-bottom: 1px solid #ddd;
     transition: all .3s ease-in-out;
+    text-transform: uppercase;
 }
 
 .menu-bar > ul > li:nth-child(3) > a {
     border: none;
-}
-
-.menu-bar a:hover {
-    background-color: rgba(255, 255, 255, 0.63);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.211);
-    color: var(--cor4);
 }
 
 /*------MAIN------*/
@@ -152,8 +147,8 @@ label[for=bt-menu] span:nth-child(3){
 
 .title-section {
     font-size: 3.2rem;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
-    color: var(--cor1);
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411); */
+    color: var(--cor4);
     text-align: center;
 }
 
@@ -189,12 +184,11 @@ main a  {
 
 #projetos {
     padding: 1rem 0 3rem 0;
-    background-color: var(--cor1);
+    background-color: rgb(242, 244, 248);
 }
 
 #projetos > h2 {
     margin: 0 0 2.5rem 0;
-    color: white;
 }
 
 #grid-projetos {
@@ -308,6 +302,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+footer i.copyright::before {
+    content: "\00A9";
+    font: normal bold 1.2rem var(--fonte-default);
+}
+
 /*------MEDIA QUERIES------*/
 
 @media(min-width:768px) {
@@ -337,7 +336,12 @@ footer a:hover {
         padding: 0.5rem 1rem;
         border: none;
         border-radius: 0.5rem;
-        font-size: 2.2rem;
+    }
+
+    .menu-bar a:hover {
+        /* background-color: var(--cor4); */
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.211);
+        color: white;
     }
 
     #sobre-mim, #contatos, #grid-projetos {
