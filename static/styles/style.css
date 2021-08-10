@@ -169,7 +169,7 @@ label[for=bt-menu] span:nth-child(3){
 }
 
 .content-section {
-    padding: 0 3rem;
+    padding: 0 1rem;
 }
 
 .section {
@@ -186,7 +186,7 @@ main a  {
     display: block;
     width: 17rem;
     border-radius: 50%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 #sobre-mim h2 {
@@ -259,11 +259,6 @@ main a  {
 
 /*------CONTATOS------*/
 
-#contatos {
-    /* padding: 1rem;
-    margin: 0 0 1rem 0; */
-}
-
 #contatos ul {
     /* margin: 3rem 0; */
     display: flex;
@@ -321,6 +316,29 @@ footer i.copyright::before {
 
 /*------MEDIA QUERIES------*/
 
+
+/*CELULARES PARA CIMA*/
+@media (min-width: 576px) {
+    /*----MAIN----*/
+
+    /*PROJETOS*/
+    
+    .projeto > div {
+        display: flex;
+        flex-flow: nowrap column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+  
+    .projeto img {
+        width: 45rem;
+    }
+
+}
+
+
+/*TABLETS PARA CIMA*/
 @media(min-width:768px) {
 
     /*HEADER*/
@@ -362,9 +380,7 @@ footer i.copyright::before {
     }
     
     .content-section {
-        /* max-width: 98rem; */
-        /* margin: 0 auto; */
-        /* padding: 2rem 3rem; */
+        padding: 0 3rem;
     }
 
     /*SOBRE*/
@@ -389,7 +405,11 @@ footer i.copyright::before {
     /*PROJETOS*/
 
     #grid-projetos {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projeto img {
+        width: 100%;
     }
 
     /*CONTATOS*/
