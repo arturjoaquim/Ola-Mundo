@@ -169,7 +169,11 @@ label[for=bt-menu] span:nth-child(3){
 }
 
 .content-section {
-    padding: 3rem 2rem;
+    padding: 0 3rem;
+}
+
+.section {
+    padding: 2rem 0 3rem 0;
 }
 
 main a  {
@@ -208,7 +212,7 @@ main a  {
 
 #grid-projetos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: 1fr;
     /* flex-flow: row wrap;
     justify-content: center; */
     gap: 1.5rem;
@@ -228,7 +232,7 @@ main a  {
     flex-flow: nowrap column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0 1.5rem 0;
+    padding: 1rem 0;
 }
 
 /* .projeto:hover {
@@ -248,6 +252,7 @@ main a  {
 .projeto img {
     border-radius: 0.5rem;
     width: 90%;
+    /* height: 18rem; */
     /* max-height: 50%; */
     /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308); */
 }
@@ -318,6 +323,8 @@ footer i.copyright::before {
 
 @media(min-width:768px) {
 
+    /*HEADER*/
+
     header > div {
         display: flex;
         flex-flow: nowrap row;
@@ -347,11 +354,20 @@ footer i.copyright::before {
         border-radius: 0.5rem;
     }
 
+    /*MAIN*/
+
+    #sobre-mim, #grid-projetos, #contatos {
+        max-width: 98rem;
+        margin: 0 auto;
+    }
+    
     .content-section {
         /* max-width: 98rem; */
         /* margin: 0 auto; */
         /* padding: 2rem 3rem; */
     }
+
+    /*SOBRE*/
 
     #sobre-mim > article {
         display: flex;
@@ -369,6 +385,14 @@ footer i.copyright::before {
     #sobre-mim p {
         text-align: justify;
     }
+
+    /*PROJETOS*/
+
+    #grid-projetos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*CONTATOS*/
 
     #contatos a {
         display: inline;
