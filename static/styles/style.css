@@ -22,6 +22,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -395,7 +396,11 @@ footer i.copyright::before {
     }
 
     #sobre-mim img {
-        align-self: flex-end;
+        display: block;
+        width: 35rem;
+        border-radius: 0;
+        margin: 1rem auto;
+        align-self: flex-start;
     }
 
     #sobre-mim p {
