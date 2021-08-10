@@ -10,28 +10,30 @@
 <body>
     <!--HEADER-->
     <header>
-        <h1 class="title">Artur Joaquim</h1>
-        <!--MENU-HAMBURGUER-->
-        <input type="checkbox" name="bt-menu" id="bt-menu">
-        <label for="bt-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <!--NAV-BAR-->
-        <nav class="menu-bar">
-            <ul>
-                <li><a href="#sobre-mim">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-            </ul>
-        </nav>
+        <div>
+            <h1 class="title">Artur Joaquim</h1>
+            <!--MENU-HAMBURGUER-->
+            <input type="checkbox" name="bt-menu" id="bt-menu">
+            <label for="bt-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!--NAV-BAR-->
+            <nav class="menu-bar">
+                <ul>
+                    <li><a href="#sobre-mim">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!--MAIN-->
     <main>
         <!--SOBRE-->
         <section id="sobre-mim">
-            <article>
+            <article class="content-section">
                 <img src="static/images/minha-foto.jpg" alt="Minha foto">
                 <div>
                     <h2 class="title title-section">Quem sou eu?</h2>
@@ -41,23 +43,34 @@
             </article>
         </section>
         <!--PROJETOS-->
-        <section id="projetos">
+        <section id="projetos" class="content-section">
             <h2 class="title title-section">Projetos</h2>
             <div id="grid-projetos">
                 <article class="projeto">
+                    <h3 class="title">Site Mobu</h3>
+                    <div>
+                        <img src="static/images/comunidade-p.png" alt="Imagem comunidade">
+                        <!--<p>Comunidade Techs é uma web comunidade com usuários, posts e muito mais. Desenvolvido com Flask (python) e Bootstrap, Comunidade Techs é apenas um site para portfolio pessoal. Você pode acessar seu <a href="https://github.com/arturjoaquim/site-comunidade" target="_blank" rel="external">código fonte</a> e também <a href="https://comunidade-techs.herokuapp.com" target="_blank" rel="external">visitá-lo</a>.</p>-->
+                    </div>
+                </article>
+                <article class="projeto">
                     <h3 class="title">Comunidade Techs</h3>
-                    <img src="static/images/comunidade-p.png" alt="Imagem comunidade">
-                    <!--<p>Comunidade Techs é uma web comunidade com usuários, posts e muito mais. Desenvolvido com Flask (python) e Bootstrap, Comunidade Techs é apenas um site para portfolio pessoal. Você pode acessar seu <a href="https://github.com/arturjoaquim/site-comunidade" target="_blank" rel="external">código fonte</a> e também <a href="https://comunidade-techs.herokuapp.com" target="_blank" rel="external">visitá-lo</a>.</p>-->
+                    <div>
+                        <img src="static/images/comunidade-p.png" alt="Imagem comunidade">
+                        <!--<p>Comunidade Techs é uma web comunidade com usuários, posts e muito mais. Desenvolvido com Flask (python) e Bootstrap, Comunidade Techs é apenas um site para portfolio pessoal. Você pode acessar seu <a href="https://github.com/arturjoaquim/site-comunidade" target="_blank" rel="external">código fonte</a> e também <a href="https://comunidade-techs.herokuapp.com" target="_blank" rel="external">visitá-lo</a>.</p>-->
+                    </div>
                 </article>
                 <article class="projeto">
                     <h3 class="title">Chat-bot</h3>
-                    <img src="static/images/comunidade-p.png" alt="Imagem comunidade">
-                    <!--<p>Chat-bot é uma IA treinada para responder mensagens e simular uma conversa natural entre duas pessoas. É desenvolvido com python e spacy (biblioteca de linguagem neural). Você pode acessar seu <a href="https://github.com/arturjoaquim/bot-api" target="_blank" rel="external">código fonte</a> por aqui.</p>-->
+                    <div>
+                        <img src="static/images/comunidade-p.png" alt="Imagem comunidade">
+                        <!--<p>Chat-bot é uma IA treinada para responder mensagens e simular uma conversa natural entre duas pessoas. É desenvolvido com python e spacy (biblioteca de linguagem neural). Você pode acessar seu <a href="https://github.com/arturjoaquim/bot-api" target="_blank" rel="external">código fonte</a> por aqui.</p>-->
+                    </div>
                 </article>
             </div>
         </section>
         <!--CONTATOS-->
-        <section id="contatos">
+        <section id="contatos" class="content-section">
             <h2 class="title title-section">Onde estou?</h2>
             <ul>
                 <li>
