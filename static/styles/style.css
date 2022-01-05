@@ -171,6 +171,13 @@ label[for=bt-menu] span:nth-child(3){
 
 .content-section {
     padding: 0 1rem;
+    max-width: 98rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .section {
@@ -183,10 +190,11 @@ main a  {
 
 /*SOBRE*/
 
-#sobre-mim img {
+
+.me-image {
     display: block;
     width: 17rem;
-    border-radius: 50%;
+    border-radius: 5rem;
     margin: auto;
 }
 
@@ -201,14 +209,20 @@ main a  {
     margin: 1rem 0;
 }
 
+.container-me {
+    display: flex;
+    flex-direction: row wrap;
+    gap: 3rem;
+}
+
 /*PROJETOS*/
 
 #projetos {
     background-color: rgb(242, 244, 248);
 }
 
-#projetos > h2 {
-    margin: 0 0 2rem 0;
+#projetos h2 {
+    margin: 2rem 0;
 }
 
 #grid-projetos {
@@ -263,14 +277,16 @@ main a  {
 #contatos ul {
     /* margin: 3rem 0; */
     display: flex;
-    align-items: flex-start;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
+    gap: 0 3rem;
+    justify-content: center;
     list-style: none;
 }
 
 #contatos li {
     margin: 1.5rem 0;
     font-size: 1.6rem;
+    flex-basis: 33.3%;
 }
 
 #contatos a {
@@ -375,10 +391,6 @@ footer i.copyright::before {
 
     /*MAIN*/
 
-    #sobre-mim, #grid-projetos, #contatos {
-        max-width: 98rem;
-        margin: 0 auto;
-    }
     
     .content-section {
         padding: 0 3rem;
@@ -395,10 +407,9 @@ footer i.copyright::before {
         text-align: left;
     }
 
-    #sobre-mim img {
+    .me-image {
         display: block;
         width: 35rem;
-        border-radius: 0;
         margin: 1rem auto;
         align-self: flex-start;
     }
